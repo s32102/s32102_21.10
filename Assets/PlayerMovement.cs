@@ -20,8 +20,7 @@ public class PlayerControler11c : MonoBehaviour
 
     void Start()
     {
-        rigidbody2 = GetComponent<Rigidbody2D>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        rigidbody2 = GetComponent<Rigidbody2D>();      
     }
 
     // Update is called once per frame
