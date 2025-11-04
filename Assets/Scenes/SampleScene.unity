@@ -662,6 +662,7 @@ MonoBehaviour:
     m_Bits: 256
   rigidbody2: {fileID: 0}
   spriteRenderer: {fileID: 1133552468}
+  animator: {fileID: 1133552469}
 --- !u!50 &2069209776
 Rigidbody2D:
   serializedVersion: 5

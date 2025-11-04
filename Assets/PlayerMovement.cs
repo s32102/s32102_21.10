@@ -57,16 +57,18 @@ public class PlayerControler11c : MonoBehaviour
         }
 
         rigidbody2.linearVelocity = new Vector2(moveInput * currentMoveSpeed * Time.fixedDeltaTime, rigidbody2.linearVelocity.y);
+
+        if (moveInput != 0)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
+        }
     }
 
-    indexer (Input !=0)
-            {
-        animator.SetBool("isRunning", true);
-    }
-    else
-    {
-        animator.SetBool("isRunning", false);
-    }
+ 
 }
 
 
