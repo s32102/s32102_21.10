@@ -18,6 +18,7 @@ public class PlayerControler11c : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private bool isGrounded;
 
+    [SerializeField] private Animator animator;
     void Start()
     {
         rigidbody2 = GetComponent<Rigidbody2D>();      
@@ -56,6 +57,15 @@ public class PlayerControler11c : MonoBehaviour
         }
 
         rigidbody2.linearVelocity = new Vector2(moveInput * currentMoveSpeed * Time.fixedDeltaTime, rigidbody2.linearVelocity.y);
+    }
+
+    indexer (Input !=0)
+            {
+        animator.SetBool("isRunning", true);
+    }
+    else
+    {
+        animator.SetBool("isRunning", false);
     }
 }
 
